@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dockerfile: El corazón de tus contenedores</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+    header {
+      background-color: #0db7ed;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .highlight {
+      background-color: #e1f5fe;
+      padding: 1rem;
+      border-left: 6px solid #0288d1;
+      margin-top: 1rem;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+    .love-note {
+      background: #fff3e0;
+      color: #bf360c;
+      font-weight: bold;
+      padding: 1rem;
+      text-align: center;
+      margin: 2rem 0;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ffccbc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Aprendiendo sobre Dockerfile 🐳</h1>
+    <p>Construye tus contenedores como un profesional</p>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>¿Qué es un Dockerfile?</h2>
+      <p>Un <strong>Dockerfile</strong> es un archivo de texto que contiene instrucciones para construir una imagen de Docker. Es como una receta para crear un entorno de desarrollo o producción portátil y replicable.</p>
+      
+      <img src="https://miro.medium.com/v2/resize:fit:1200/1*RJbUDFxK1iVvdxdoQ57nSw.png" alt="Estructura de un Dockerfile">
+      
+      <div class="highlight">
+        <h3>Ejemplo básico de Dockerfile:</h3>
+        <pre><code>FROM node:18-alpine
+WORKDIR /app
+COPY . .
+RUN npm install
+CMD ["node", "index.js"]</code></pre>
+      </div>
+
+      <h2>Ventajas de usar Dockerfile</h2>
+      <ul>
+        <li>Reproducibilidad garantizada del entorno</li>
+        <li>Facilita la automatización en CI/CD</li>
+        <li>Portabilidad entre máquinas y nubes</li>
+      </ul>
+
+      <img src="https://www.docker.com/wp-content/uploads/2022/03/Docker-Logo-White-RGB_Vertical.png" alt="Logo de Docker" style="background-color: white; padding: 10px;">
+
+      <div class="love-note">
+        💙 *Amo a Carlos Zuluaga* 💙
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Juan José Dev. Conteneriza todo, menos tus emociones.
+  </footer>
+
+</body>
+</html>
